@@ -4,9 +4,19 @@ Contains:
   * Arabic-English transliteration dataset mined from Wikipedia.
   * Trained transliteration modules for Arabic-English, English-Japanese and English-IPA.
 
-## How to use the trained models
+## Getting the code for loading and training models
 
-If you want to use some of the models provided in this repository you can use [the clstm library](https://github.com/tmbdev/clstm), as provided [here](https://github.com/mihaelacr-google/clstm/tree/transliteration). The binary `clstmfilter` can be used to use an already existing model to transliterate your data.
+If you want to use some of the models provided in this repository you can use [the clstm library](https://github.com/tmbdev/clstm), as provided in the branch [here](https://github.com/mihaelacr-google/clstm/tree/transliteration).
+
+To clone the repository:
+
+```
+git clone git@github.com:mihaelacr-google/clstm.git
+```
+
+## How to use the trained models 
+
+The binary `clstmfilter` can be used to use an already existing model to transliterate your data.
 
 To build the binary, use the command below. For more on how to install clstm read [this](https://github.com/mihaelacr-google/clstm/tree/transliteration#clstm). You can read more about scons [here](http://scons.org/).
 
