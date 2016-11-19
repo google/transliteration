@@ -3,6 +3,11 @@ Transliteration related data files and/or models.
 Contains:
   * Arabic-English transliteration dataset mined from Wikipedia.
   * Trained transliteration modules for Arabic-English, English-Japanese and English-IPA.
+  
+## The models
+
+The transliteration models provided are recurrent neural networks trained with a [CTC loss](http://www.cs.toronto.edu/~graves/icml_2006.pdf).
+For a detailed description of the models, see the [paper](https://arxiv.org/abs/1610.09565).
 
 ## Getting the code for loading and training models
 
