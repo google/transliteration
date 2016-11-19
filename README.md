@@ -56,3 +56,18 @@ lr=0.1
 ./clstmfiltertrain your_train_data.txt your_eval_data.txt
 
 ```
+
+## Reproduce our results
+
+If you want to reproduce the results from our paper, you can run:
+
+```
+scons -j 4
+set -a 
+load=ar2en.clstm
+with_gt=1
+./clstmfilter ar2en-test.txt
+```
+
+This will load the one layer Arabic to English model, and produce the character error rate and the word error rate of the model on the test data. You can similary load the 2 layer model and compute the metrics of that model.
+
