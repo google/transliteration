@@ -6,12 +6,12 @@ Contains:
 
 ## How to use the trained models
 
-If you want to use some of the models provided in this repository you can use [the clstm library](https://github.com/tmbdev/clstm). The binary `clstmfilter` can be used to use an already existing model to transliterate your data.
+If you want to use some of the models provided in this repository you can use [the clstm library](https://github.com/tmbdev/clstm), as provided [here](https://github.com/mihaelacr-google/clstm/tree/transliteration). The binary `clstmfilter` can be used to use an already existing model to transliterate your data.
 
-To build the binary, use the command below. For more on how to install clstm read [this](https://github.com/tmbdev/clstm#prerequisites). You can read more about scons [here](http://scons.org/).
+To build the binary, use the command below. For more on how to install clstm read [this](https://github.com/mihaelacr-google/clstm/tree/transliteration#clstm). You can read more about scons [here](http://scons.org/).
 
 ```
-scons clstmfilter
+scons -j 4
 ```
 
 For example, if you have a list of Arabic words which you want to transliterate to English, you can run the following commands in your shell:
@@ -30,7 +30,7 @@ If you want to train a new model with your data, you can use the `clstmfiltertra
 To build the binary, run:
 
 ```
-scons clstmsfiltertrain
+scons -j 4
 ```
 
 To train the model:
